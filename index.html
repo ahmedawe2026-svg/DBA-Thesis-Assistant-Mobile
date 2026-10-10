@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مكتب الرسالة v3 – إدارة رسائل الدكتوراه والتحقق منها والبحث الأكاديمي</title>
+<meta name="description" content="تطبيق عربي لإدارة رسالة الدكتوراه: الهيكل، الدراسات السابقة، سجل المراجع، فحص صحة المراجع عبر Crossref و OpenAlex، البحث الأكاديمي، مصفوفة الاتساق، والمولّد الآلي.">
+<meta name="theme-color" content="#16307f">
+<link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="مكتب الرسالة">
+<meta property="og:type" content="website">
+<meta property="og:title" content="مكتب الرسالة v3 — مساعد رسائل الدكتوراه">
+<meta property="og:description" content="إدارة رسالة الدكتوراه من البداية حتى الاستبيان، مع فحص صحة المراجع والبحث الأكاديمي.">
+<meta property="og:image" content="screenshots/01-dashboard.png">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div role="note" aria-label="تنبيه أخلاقي وعلمي" class="ethics-banner" style="background:#3b2f00;color:#ffe9b0;border-bottom:1px solid #6b5500;padding:10px 16px;font-size:13.5px;line-height:1.7;text-align:center">
+⚠️ <b>تنبيه أخلاقي وعلمي:</b> هذا التطبيق أداة مساعدة للجمع والفحص والتنسيق، وليس بديلاً عن الباحث أو المشرف. يجب مراجعة كل مُخرَج وتحريره والتحقق منه، والالتزام بسياسة جامعتك بشأن أدوات المساعدة. النصوص المولّدة آلياً مسوّدات أولية فقط.
+</div>
+<header>
+ <div class="hrow">
+  <div><h1>🎓 مكتب الرسالة <span class="ver">v3</span></h1><p>إدارة رسائل الدكتوراه · التحقق من صحة المراجع · مدخل البحث الأكاديمي</p></div>
+  <div class="pbar">
+   <select id="psel" aria-label="اختيار المشروع"></select>
+   <button class="hbtn" id="newp">+ جديد</button>
+   <button class="hbtn" id="renp">تسمية</button>
+   <button class="hbtn" id="delp">حذف</button>
+   <button class="hbtn" id="inst" hidden>📲 ثبّت التطبيق</button>
+   <button class="hbtn" id="thm" title="تبديل المظهر">🖥️</button>
+   <span id="saved" aria-live="polite">✓</span>
+  </div>
+ </div>
+ <nav role="tablist" id="nav"></nav>
+</header>
+<main id="main"></main>
+<div id="toast" role="status"></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "appId": "app.dbadesk.thesis",
+  "appName": "مكتب الرسالة",
+  "webDir": "www",
+  "server": {
+    "androidScheme": "http",
+    "cleartext": true
+  },
+  "android": {
+    "allowMixedContent": true
+  }
+}
